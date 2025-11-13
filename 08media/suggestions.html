@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="An information resource about the character Queen Dizzy from Guilty Gear Strive">
+    <meta name="author" content="Ethan Perl">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>The Dizzy Compendium</title>
+</head>
+<!--Main Page Content-->
+
+<body>
+    <!--Header Section-->
+    <header>
+        <img src="images/logo.png" alt="Vialattea crest" width="68" height="100">
+        <span>The Dizzy Compendium</span>
+        <p>Your resource for all things Dizzy from Guilty Gear Strive</p>
+    </header>
+    <!--Navigation Section-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Dizzy Overview</a></li>
+            <li><a href="moves.html">Key Moves</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="suggestions.html">Suggestions</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+    </nav>
+    <!--Main Section-->
+    <main>
+        <h1>User Suggestions</h1>
+        <p><em>Send your personal combos and strategy to the site owner</em></p>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>User Info</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+
+                <label>Last Name* <input type="text" name="lname" required></label>
+
+                <label>Email* <input type="email" name="email" required placeholder="example@example.com"></label>
+
+                <label>Cell Number <input type="tel" name="phone" placeholder="000-000-0000"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>User Skill Level</legend>
+                <label><input type="radio" name="skill" value="low">Low Skill Level</label>
+                <label><input type="radio" name="skill" value="mid">Mid Skill Level</label>
+                <label><input type="radio" name="skill" value="high">High Skill Level</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Suggestion Type</legend>
+                <label><input type="checkbox" name="combo" value="chosen">Combo</label>
+                <label><input type="checkbox" name="strategy" value="chosen">Strategy</label>
+                <label><input type="checkbox" name="zoning" value="chosen">Zoning Pattern</label>
+                <label><input type="checkbox" name="error" value="chosen">Report Error</label>
+
+                <label>Applicable Patch Version
+                    <select name="patch">
+                        <option value="none">Please Select</option>
+                        <option value="1.50">1.50 (current)</option>
+                        <option value="1.49">1.49</option>
+                        <option value="1.48">1.48</option>
+                        <option value="1.47">1.47</option>
+                        <option value="1.46">1.46</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label>Suggestion
+                <textarea name="suggestion"></textarea>
+            </label>
+            <input type="submit" value="Send Suggestion">
+        </form>
+    </main>
+    <footer>
+        <address>
+            Contact site owner<br>
+            <a href="tel:555023975">555-002-3975</a><br>
+            <a href="mailto:notanemail@notanemail.com">notanemail@notanemail.com</a><br>
+            123 Fake Street<br>
+            Faketown, FK 12345<br>
+        </address>
+        <p>&copy; Ethan Perl | 2025 &bull; Web Essentials &bull; All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
